@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Digital Solutions - About Us</title>
+    <style>
+        /* Basic styles for the body and main layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4a72a1; /* Light background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header section styling with Flexbox */
+        .header {
+            background-color: #02113b;
+            padding: 20px 40px;
+            display: flex; /* Enables flexbox layout for navigation */
+            justify-content: space-between; /* Pushes logo to the left and nav to the right */
+            align-items: center; /* Vertically centers items */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff; /* Darker blue for the logo */
+        }
+
+        .header nav a {
+            text-decoration: none;
+            color: #ffffff; /* Light blue for menu links */
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        /* Main content styling */
+        .main-content {
+            padding: 50px 40px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        
+        /* About section styling */
+        .about-section {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .about-section h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #02113b;
+            margin-bottom: 40px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        /* Team section styling */
+        .team-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .team-section h3 {
+            font-size: 28px;
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+        
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .team-member {
+            background-color: #02113b;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            max-width: 250px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #02113b; /* Dark blue background */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">Oasis Digital Solutions</div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- About Section -->
+        <div class="about-section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Welcome to Oasis Digital Solutions, your dedicated partner in navigating the digital landscape. Founded on the principle that technology should be a source of growth and clarity, we are a passionate team of developers, designers, and strategists committed to transforming your business ideas into reality. We believe that every company, regardless of size, deserves a powerful and effective digital presence.</p>
+                <p>Our journey began with a shared vision to simplify the complex world of web development and design. We noticed many businesses struggled to find solutions that were not only technologically sound but also deeply aligned with their unique goals. At Oasis, we fill that gap by offering tailored, transparent, and user-centric services. We don't just build websites; we build partnerships, ensuring that every solution we deliver is a perfect fit for our clients' needs and aspirations.</p>
+                <p>Our mission is to empower businesses with the digital tools they need to succeed. We focus on building scalable, secure, and beautiful platforms that not only meet today's demands but are also future-proofed for tomorrow. From the initial concept to the final launch and beyond, we stand by our clients, providing expert guidance and reliable support every step of the way.</p>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section">
+                <h3>Meet Our Team</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="image/Opoke John.jpg" alt="Image of a team member.">
+                        <h4>Opoke John</h4>
+                        <p>CEO & Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="image/Amaka Udeani.jpg"alt="Image of a team member.">
+                        <h4>Amaka Udeani </h4>
+                        <p>Head of UI/UX</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="image/Ogbani Samuel.jpg"alt="Image of a team member.">
+                        <h4>Ogboani Samule </h4>
+                        <p>Digital Strategist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Oasis Digital Solutions. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

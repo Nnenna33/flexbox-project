@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles for the body and main layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light background */
+            color: #333;
+        }
+
+        /* Header section styling with Flexbox */
+        .header {
+            background-color: #02113b;
+            padding: 20px 40px;
+            display: flex; /* Enables flexbox layout for navigation */
+            justify-content: space-between; /* Pushes logo to the left and nav to the right */
+            align-items: center; /* Vertically centers items */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff; /* Darker blue for the logo */
+        }
+
+        .header nav a {
+            text-decoration: none;
+            color: #ffffff; /* Light blue for menu links */
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        /* Hero section styling with Flexbox */
+        .hero {
+            background-color: #1a2b53; /* Dark blue background */
+            color: #ffffff;
+            padding: 60px 40px;
+            display: flex; /* Enables flexbox for content arrangement */
+            align-items: center; /* Vertically centers the content */
+            gap: 50px; /* Space between the two columns */
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column; /* Stack items vertically on mobile devices */
+                text-align: center;
+            }
+        }
+
+        .hero-text {
+            flex: 1; /* Allows the text content to grow and fill space */
+            max-width: 600px;
+        }
+        
+        .hero-text h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+        
+        .hero-text p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .hero-image {
+            flex: 1; /* Allows the image to grow and fill space */
+            max-width: 600px;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Services section styling with Flexbox */
+        .services {
+            background-color: #f0f8ff; /* Light blue background */
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            color: #2b6cb0;
+            margin-bottom: 40px;
+        }
+
+        .services-container {
+            display: flex; /* Enables flexbox for service boxes */
+            flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+            justify-content: center; /* Centers boxes horizontally */
+            gap: 25px; /* Space between the boxes */
+        }
+
+        .service-box {
+            background-color: #02113b;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 300px; /* Allows boxes to grow, shrink, with a base width of 300px */
+            max-width: 350px;
+        }
+
+        .service-box h3 {
+            color: #2b6cb0;
+            font-size: 24px;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #02113b; /* Dark blue background */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">Oasis Digital Solutions</div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Your Partner in Digital Transformation</h2>
+            <p>We provide innovative and tailored digital solutions to help your business thrive in the modern age. Let us build your future, together.</p>
+        </div>
+        <div class="hero-image">
+            <img src="image/A  web developer on his system in the office.jpg" alt="Digital solutions and technology illustration">
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <!-- Service Box 1 -->
+            <div class="service-box">
+                <h3>Web Development</h3>
+                <p>We build responsive, fast, and scalable websites that provide an excellent user experience.</p>
+            </div>
+            <!-- Service Box 2 -->
+            <div class="service-box">
+                <h3>UI/UX Design</h3>
+                <p>Crafting beautiful and intuitive user interfaces that engage and convert your audience.</p>
+            </div>
+            <!-- Service Box 3 -->
+            <div class="service-box">
+                <h3>Cloud Solutions</h3>
+                <p>Secure and efficient cloud services to power your business operations and data management.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Oasis Digital Solutions. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
